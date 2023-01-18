@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+:root {
+    font-size: 62.5%;
+    --base-color:194;
+    --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13)
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+}
+
+body {
+    background-color: #121214;
+    color: #FFFFFF;
+
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    min-height: 100vh;
+}
+
+main {
+    align-self: end;
+    justify-self: center;
+}
+
+.timer {
+    margin-bottom: 1.8rem;
+    font-size: clamp(4rem, 4rem + 12vw,8.8rem);
+    font-weight: 700;  
+    display: flex;  
+}
+
+.controls {
+    background: rgba(66, 211, 255, 0.13);
+    border-radius: 9999px;
+    gap: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button svg {
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem)
+}
+
+footer {
+    justify-self: end;
+    align-self: end;
+}
+
+footer button {
+    padding: 3.0rem;
+}
+
+.hide {
+    display: none;
+}
